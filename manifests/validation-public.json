@@ -1,0 +1,41 @@
+{
+  "validated_on": "2026-10-25",
+  "scope": "public-release",
+  "artifacts_checked": 43,
+  "public_files_checked": 59,
+  "document_links_checked": 24,
+  "evidence": {
+    "written_bytes": 512110190592,
+    "cold_verified_bytes": 512110190592,
+    "power_cycles": [
+      2,
+      3
+    ],
+    "new_read_kernel_errors": 0,
+    "original_fio_hashes_preserved": true
+  },
+  "offline_tests": [
+    {
+      "name": "final-test58",
+      "returncode": 0,
+      "output": "PASS 58 offline data/guard checks; no fio, SMART or block device was invoked\n"
+    },
+    {
+      "name": "fio-regression12",
+      "returncode": 0,
+      "output": "test_blank_lines_and_bom (__main__.Regression.test_blank_lines_and_bom) ... ok\ntest_full_run_must_not_trim (__main__.Regression.test_full_run_must_not_trim) ... ok\ntest_malformed_output_rejected (__main__.Regression.test_malformed_output_rejected) ... ok\ntest_negative_read_must_not_write_or_trim (__main__.Regression.test_negative_read_must_not_write_or_trim) ... ok\ntest_real_expected_mismatch (__main__.Regression.test_real_expected_mismatch) ... ok\ntest_real_mismatch_cannot_pass_full_disk_check (__main__.Regression.test_real_mismatch_cannot_pass_full_disk_check) ... ok\ntest_real_read (__main__.Regression.test_real_read) ... ok\ntest_real_write (__main__.Regression.test_real_write) ... ok\ntest_reproduces_original_failure (__main__.Regression.test_reproduces_original_failure) ... ok\ntest_smoke_completes_with_stubbed_fio_and_real_report_fixtures (__main__.Regression.test_smoke_completes_with_stubbed_fio_and_real_report_fixtures) ... ok\ntest_success_or_unrelated_stderr_not_accepted_as_negative (__main__.Regression.test_success_or_unrelated_stderr_not_accepted_as_negative) ... ok\ntest_wrong_error_is_not_an_expected_mismatch (__main__.Regression.test_wrong_error_is_not_an_expected_mismatch) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.152s\n\nOK\n"
+    },
+    {
+      "name": "read-v3-guards15",
+      "returncode": 0,
+      "output": "test_actual_completed_write_proof (__main__.Checks.test_actual_completed_write_proof) ... ok\ntest_bad_counter_rejected (__main__.Checks.test_bad_counter_rejected) ... ok\ntest_changed_core_rejected_before_import (__main__.Checks.test_changed_core_rejected_before_import) ... ok\ntest_changed_proof_rejected (__main__.Checks.test_changed_proof_rejected) ... ok\ntest_exact_boot_limit_and_measured_speed (__main__.Checks.test_exact_boot_limit_and_measured_speed) ... ok\ntest_existing_target_and_wrong_disk_guards (__main__.Checks.test_existing_target_and_wrong_disk_guards) ... ok\ntest_new_boot_and_power_cycle_accepted (__main__.Checks.test_new_boot_and_power_cycle_accepted) ... ok\ntest_original_core_accepted (__main__.Checks.test_original_core_accepted) ... ok\ntest_original_write_file_required (__main__.Checks.test_original_write_file_required) ... ok\ntest_progress_uses_read_counter_and_512_byte_units (__main__.Checks.test_progress_uses_read_counter_and_512_byte_units) ... ok\ntest_readonly_recipe_has_full_coverage (__main__.Checks.test_readonly_recipe_has_full_coverage) ... ok\ntest_smart_transport_errors_are_visible (__main__.Checks.test_smart_transport_errors_are_visible) ... ok\ntest_state_must_match_actual_write (__main__.Checks.test_state_must_match_actual_write) ... ok\ntest_verify_requires_power_cycle (__main__.Checks.test_verify_requires_power_cycle) ... ok\ntest_wrong_or_mistyped_limits_rejected (__main__.Checks.test_wrong_or_mistyped_limits_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.070s\n\nOK\n"
+    },
+    {
+      "name": "read-v4-guards15",
+      "returncode": 0,
+      "output": "test_actual_completed_write_proof (__main__.Checks.test_actual_completed_write_proof) ... ok\ntest_bad_counter_rejected (__main__.Checks.test_bad_counter_rejected) ... ok\ntest_changed_core_rejected_before_import (__main__.Checks.test_changed_core_rejected_before_import) ... ok\ntest_changed_proof_rejected (__main__.Checks.test_changed_proof_rejected) ... ok\ntest_exact_boot_limit_and_measured_speed (__main__.Checks.test_exact_boot_limit_and_measured_speed) ... ok\ntest_existing_target_and_wrong_disk_guards (__main__.Checks.test_existing_target_and_wrong_disk_guards) ... ok\ntest_new_boot_and_power_cycle_accepted (__main__.Checks.test_new_boot_and_power_cycle_accepted) ... ok\ntest_original_core_accepted (__main__.Checks.test_original_core_accepted) ... ok\ntest_original_write_file_required (__main__.Checks.test_original_write_file_required) ... ok\ntest_progress_uses_read_counter_and_512_byte_units (__main__.Checks.test_progress_uses_read_counter_and_512_byte_units) ... ok\ntest_readonly_recipe_has_full_coverage (__main__.Checks.test_readonly_recipe_has_full_coverage) ... ok\ntest_smart_transport_errors_are_visible (__main__.Checks.test_smart_transport_errors_are_visible) ... ok\ntest_state_must_match_actual_write (__main__.Checks.test_state_must_match_actual_write) ... ok\ntest_verify_requires_power_cycle (__main__.Checks.test_verify_requires_power_cycle) ... ok\ntest_wrong_or_mistyped_limits_rejected (__main__.Checks.test_wrong_or_mistyped_limits_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.069s\n\nOK\n"
+    }
+  ],
+  "recovery_assets": "not run; local vendor assets required",
+  "hardware_commands_executed": false
+}

@@ -1,0 +1,3 @@
+# Tested source hashes depend on exact bytes.
+* -text -filter
+evidence/** linguist-generated=true

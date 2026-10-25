@@ -1,0 +1,54 @@
+{
+  "source_zip_sha256": "f9ddea61b45d462d77fcc4948dc10243d7d91eb92cbe891a2dc827fd8a356e7f",
+  "command_start": {
+    "time": "2026-10-24T21:29:24.189698+02:00",
+    "stage": "command_start",
+    "number": 45,
+    "phase": "erase9",
+    "label": "erase-all-09",
+    "cdb": "a10a262601000009a0310000",
+    "bytes": 512,
+    "timeout_seconds": 960,
+    "gap_seconds": 1.0179865300000301,
+    "outgoing_sha256": "e8ae64a6b6f6dd7d8ed80f83f513db03f2d31c1610c9ada6e5e41ddbeb8b6db4"
+  },
+  "command_end": {
+    "time": "2026-10-24T21:29:24.226667+02:00",
+    "stage": "command_end",
+    "number": 45,
+    "rc": 0,
+    "errno": 0,
+    "scsi": 2,
+    "host": 0,
+    "driver": 8,
+    "residual": 0,
+    "ata": {
+      "format": "fixed",
+      "sense_key": 11,
+      "asc": 0,
+      "ascq": 0,
+      "error": 4,
+      "status": 81,
+      "device": 160,
+      "count": 1,
+      "lbal": 0,
+      "lbam": 0,
+      "lbah": 9
+    },
+    "sense": "f0000b0451a0010a00000009000000000000",
+    "seconds": 0.03694848300000331,
+    "good": false
+  },
+  "trace_tail": "         python3-2120    [000] d..1.   312.009360: ata_qc_prep: ata_port=4 ata_dev=0 tag=4 proto=ATA_PROT_PIO cmd=0x31  tf=(31/26:01:00:00:09/00:00:00:00:00/a0)\n         python3-2120    [000] d..1.   312.009364: ata_qc_issue: ata_port=4 ata_dev=0 tag=4 proto=ATA_PROT_PIO cmd=0x31  tf=(31/26:01:00:00:09/00:00:00:00:00/a0)\n          <idle>-0       [001] d.h2.   312.009494: ata_qc_complete_failed: ata_port=4 ata_dev=0 tag=4 flags=10057{ ACTIVE DMAMAP RESULT_TF QUIET FAILED } status={ DRDY DSC ERR }  res=(51/04:01:00:00:09/00:00:00:00:00/a0)\n       scsi_eh_3-201     [001] .....   312.044293: ata_eh_link_autopsy_qc: ata_port=4 ata_dev=0 tag=4 flags=10057{ ACTIVE DMAMAP RESULT_TF QUIET FAILED } err_mask=1{ DEV }\n       scsi_eh_3-201     [001] .....   312.044297: ata_eh_link_autopsy: ata_port=4 ata_dev=0 eh_action=0 err_mask=1{ DEV }",
+  "preflight_words": {
+    "0x5c0e0400": "0xb06",
+    "0x60000400": "0x5c0e1e14",
+    "0x5c0cda98": "0x4000020",
+    "0x5c0cdafc": "0x200101",
+    "0x5c0cf1d0": "0xffffffff",
+    "0x5c0cf1d4": "0xffffffff",
+    "0x5c0cdd74": "0x3040211",
+    "0x5c0cf1dc": "0xffffffff"
+  },
+  "expected_corrected_cdb": "a10a262601880009a0310000"
+}

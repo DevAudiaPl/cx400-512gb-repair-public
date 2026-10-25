@@ -1,0 +1,295 @@
+[  157.980973] ata4.00: exception Emask 0x10 SAct 0x78fff800 SErr 0x4c0000 action 0x6 frozen
+[  157.981112] ata4.00: irq_stat 0x08000000, interface fatal error
+[  157.981139] ata4: SError: { CommWake 10B8B Handshk }
+[  157.981166] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981189] ata4.00: cmd 61/70:58:00:00:00/05:00:00:00:00/40 tag 11 ncq dma 712704 out
+                        res 40/00:01:04:07:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981257] ata4.00: status: { DRDY }
+[  157.981277] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981299] ata4.00: cmd 61/90:60:70:05:00/02:00:00:00:00/40 tag 12 ncq dma 335872 out
+                        res 40/00:01:11:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981364] ata4.00: status: { DRDY }
+[  157.981383] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981405] ata4.00: cmd 61/00:68:00:08:00/08:00:00:00:00/40 tag 13 ncq dma 1048576 ou
+                        res 40/00:ff:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981469] ata4.00: status: { DRDY }
+[  157.981488] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981510] ata4.00: cmd 61/00:70:00:10:00/08:00:00:00:00/40 tag 14 ncq dma 1048576 ou
+                        res 40/00:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981574] ata4.00: status: { DRDY }
+[  157.981592] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981614] ata4.00: cmd 61/00:78:00:18:00/08:00:00:00:00/40 tag 15 ncq dma 1048576 ou
+                        res 40/00:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981678] ata4.00: status: { DRDY }
+[  157.981697] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981719] ata4.00: cmd 61/00:80:00:20:00/08:00:00:00:00/40 tag 16 ncq dma 1048576 ou
+                        res 40/00:01:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981783] ata4.00: status: { DRDY }
+[  157.981802] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981824] ata4.00: cmd 61/00:88:00:28:00/08:00:00:00:00/40 tag 17 ncq dma 1048576 ou
+                        res 40/00:01:01:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981888] ata4.00: status: { DRDY }
+[  157.981906] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.981928] ata4.00: cmd 61/00:90:00:30:00/08:00:00:00:00/40 tag 18 ncq dma 1048576 ou
+                        res 40/00:00:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.981993] ata4.00: status: { DRDY }
+[  157.982011] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.982033] ata4.00: cmd 61/00:98:00:38:00/08:00:00:00:00/40 tag 19 ncq dma 1048576 ou
+                        res 40/00:01:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.982097] ata4.00: status: { DRDY }
+[  157.982115] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.982137] ata4.00: cmd 61/00:a0:00:40:00/08:00:00:00:00/40 tag 20 ncq dma 1048576 ou
+                        res 40/00:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.982201] ata4.00: status: { DRDY }
+[  157.982220] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.982242] ata4.00: cmd 61/00:a8:00:48:00/08:00:00:00:00/40 tag 21 ncq dma 1048576 ou
+                        res 40/00:01:03:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.984152] ata4.00: status: { DRDY }
+[  157.985189] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.986926] ata4.00: cmd 61/00:b0:00:50:00/08:00:00:00:00/40 tag 22 ncq dma 1048576 ou
+                        res 40/00:01:07:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.990417] ata4.00: status: { DRDY }
+[  157.992140] ata4.00: failed command: WRITE FPDMA QUEUED
+[  157.993871] ata4.00: cmd 61/00:b8:00:58:00/08:00:00:00:00/40 tag 23 ncq dma 1048576 ou
+                        res 40/00:01:09:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  157.997413] ata4.00: status: { DRDY }
+[  157.999143] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.000886] ata4.00: cmd 61/00:d8:00:70:00/08:00:00:00:00/40 tag 27 ncq dma 1048576 ou
+                        res 40/00:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.004381] ata4.00: status: { DRDY }
+[  158.006130] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.007853] ata4.00: cmd 61/00:e0:00:78:00/08:00:00:00:00/40 tag 28 ncq dma 1048576 ou
+                        res 40/00:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.011349] ata4.00: status: { DRDY }
+[  158.013106] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.014837] ata4.00: cmd 61/00:e8:00:80:00/08:00:00:00:00/40 tag 29 ncq dma 1048576 ou
+                        res 40/00:01:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.018342] ata4.00: status: { DRDY }
+[  158.020084] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.021831] ata4.00: cmd 61/00:f0:00:88:00/08:00:00:00:00/40 tag 30 ncq dma 1048576 ou
+                        res 40/00:01:01:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.025356] ata4.00: status: { DRDY }
+[  158.027173] ata4: hard resetting link
+[  158.492940] ata4: SATA link up 3.0 Gbps (SStatus 123 SControl 320)
+[  158.494579] ata4.00: configured for UDMA/133
+[  158.494806] ata4: EH complete
+[  158.664989] ata4.00: exception Emask 0x11 SAct 0x70f801ff SErr 0x400000 action 0x6 frozen
+[  158.666889] ata4.00: irq_stat 0x48000008, interface fatal error
+[  158.668715] ata4: SError: { Handshk }
+[  158.670462] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.672210] ata4.00: cmd 61/00:00:00:58:01/08:00:00:00:00/40 tag 0 ncq dma 1048576 ou
+                        res 41/84:01:04:01:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.675766] ata4.00: status: { DRDY ERR }
+[  158.677535] ata4.00: error: { ICRC ABRT }
+[  158.679282] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.681037] ata4.00: cmd 61/00:08:00:60:01/08:00:00:00:00/40 tag 1 ncq dma 1048576 ou
+                        res 41/84:01:04:04:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.684555] ata4.00: status: { DRDY ERR }
+[  158.686362] ata4.00: error: { ICRC ABRT }
+[  158.688091] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.689828] ata4.00: cmd 61/00:10:00:68:01/08:00:00:00:00/40 tag 2 ncq dma 1048576 ou
+                        res 41/84:01:04:05:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.693332] ata4.00: status: { DRDY ERR }
+[  158.695065] ata4.00: error: { ICRC ABRT }
+[  158.696799] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.698504] ata4.00: cmd 61/00:18:00:70:01/08:00:00:00:00/40 tag 3 ncq dma 1048576 ou
+                        res 41/84:01:04:06:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.701988] ata4.00: status: { DRDY ERR }
+[  158.703713] ata4.00: error: { ICRC ABRT }
+[  158.705427] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.707161] ata4.00: cmd 61/00:20:00:78:01/08:00:00:00:00/40 tag 4 ncq dma 1048576 ou
+                        res 41/84:01:04:07:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.710623] ata4.00: status: { DRDY ERR }
+[  158.712324] ata4.00: error: { ICRC ABRT }
+[  158.714038] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.715015] ata4.00: cmd 61/00:28:00:80:01/08:00:00:00:00/40 tag 5 ncq dma 1048576 ou
+                        res 41/84:01:11:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.716889] ata4.00: status: { DRDY ERR }
+[  158.717716] ata4.00: error: { ICRC ABRT }
+[  158.718501] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.719286] ata4.00: cmd 61/00:30:00:88:01/08:00:00:00:00/40 tag 6 ncq dma 1048576 ou
+                        res 41/84:01:04:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.720889] ata4.00: status: { DRDY ERR }
+[  158.721621] ata4.00: error: { ICRC ABRT }
+[  158.722329] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.723025] ata4.00: cmd 61/70:38:00:90:01/05:00:00:00:00/40 tag 7 ncq dma 712704 out
+                        res 41/84:01:04:01:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.724447] ata4.00: status: { DRDY ERR }
+[  158.725171] ata4.00: error: { ICRC ABRT }
+[  158.725848] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.726516] ata4.00: cmd 61/90:40:70:95:01/02:00:00:00:00/40 tag 8 ncq dma 335872 out
+                        res 41/84:01:04:04:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.727857] ata4.00: status: { DRDY ERR }
+[  158.728517] ata4.00: error: { ICRC ABRT }
+[  158.729181] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.729835] ata4.00: cmd 61/00:98:00:18:01/08:00:00:00:00/40 tag 19 ncq dma 1048576 ou
+                        res 41/84:01:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.731163] ata4.00: status: { DRDY ERR }
+[  158.731816] ata4.00: error: { ICRC ABRT }
+[  158.732462] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.733114] ata4.00: cmd 61/00:a0:00:20:01/08:00:00:00:00/40 tag 20 ncq dma 1048576 ou
+                        res 41/84:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.734445] ata4.00: status: { DRDY ERR }
+[  158.735097] ata4.00: error: { ICRC ABRT }
+[  158.735743] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.736381] ata4.00: cmd 61/00:a8:00:28:01/08:00:00:00:00/40 tag 21 ncq dma 1048576 ou
+                        res 41/84:01:03:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.737711] ata4.00: status: { DRDY ERR }
+[  158.738370] ata4.00: error: { ICRC ABRT }
+[  158.739021] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.739659] ata4.00: cmd 61/00:b0:00:30:01/08:00:00:00:00/40 tag 22 ncq dma 1048576 ou
+                        res 41/84:01:07:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.740988] ata4.00: status: { DRDY ERR }
+[  158.741649] ata4.00: error: { ICRC ABRT }
+[  158.742298] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.742936] ata4.00: cmd 61/00:b8:00:38:01/08:00:00:00:00/40 tag 23 ncq dma 1048576 ou
+                        res 41/84:01:09:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.744298] ata4.00: status: { DRDY ERR }
+[  158.744997] ata4.00: error: { ICRC ABRT }
+[  158.745653] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.746299] ata4.00: cmd 61/00:e0:00:40:01/08:00:00:00:00/40 tag 28 ncq dma 1048576 ou
+                        res 41/84:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.747622] ata4.00: status: { DRDY ERR }
+[  158.748277] ata4.00: error: { ICRC ABRT }
+[  158.748938] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.749587] ata4.00: cmd 61/00:e8:00:48:01/08:00:00:00:00/40 tag 29 ncq dma 1048576 ou
+                        res 41/84:01:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.750913] ata4.00: status: { DRDY ERR }
+[  158.751568] ata4.00: error: { ICRC ABRT }
+[  158.752214] ata4.00: failed command: WRITE FPDMA QUEUED
+[  158.752908] ata4.00: cmd 61/00:f0:00:50:01/08:00:00:00:00/40 tag 30 ncq dma 1048576 ou
+                        res 41/84:01:01:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  158.754240] ata4.00: status: { DRDY ERR }
+[  158.754891] ata4.00: error: { ICRC ABRT }
+[  158.755536] ata4: hard resetting link
+[  159.224909] ata4: SATA link up 3.0 Gbps (SStatus 123 SControl 320)
+[  159.226308] ata4.00: configured for UDMA/133
+[  159.226535] ata4: EH complete
+[  159.273024] ata4.00: exception Emask 0x11 SAct 0x80ffc007 SErr 0x400000 action 0x6 frozen
+[  159.274775] ata4.00: irq_stat 0x48000008, interface fatal error
+[  159.276402] ata4: SError: { Handshk }
+[  159.278122] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.279739] ata4.00: cmd 61/00:00:00:40:01/08:00:00:00:00/40 tag 0 ncq dma 1048576 ou
+                        res 41/84:01:04:01:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.283014] ata4.00: status: { DRDY ERR }
+[  159.284704] ata4.00: error: { ICRC ABRT }
+[  159.286331] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.287985] ata4.00: cmd 61/00:08:00:48:01/08:00:00:00:00/40 tag 1 ncq dma 1048576 ou
+                        res 41/84:01:04:04:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.291263] ata4.00: status: { DRDY ERR }
+[  159.292212] ata4.00: error: { ICRC ABRT }
+[  159.293117] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.293829] ata4.00: cmd 61/00:10:00:50:01/08:00:00:00:00/40 tag 2 ncq dma 1048576 ou
+                        res 41/84:01:04:05:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.295204] ata4.00: status: { DRDY ERR }
+[  159.295889] ata4.00: error: { ICRC ABRT }
+[  159.296573] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.297265] ata4.00: cmd 61/00:70:00:70:01/08:00:00:00:00/40 tag 14 ncq dma 1048576 ou
+                        res 41/84:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.298602] ata4.00: status: { DRDY ERR }
+[  159.299262] ata4.00: error: { ICRC ABRT }
+[  159.299922] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.300572] ata4.00: cmd 61/00:78:00:78:01/08:00:00:00:00/40 tag 15 ncq dma 1048576 ou
+                        res 41/84:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.301902] ata4.00: status: { DRDY ERR }
+[  159.302561] ata4.00: error: { ICRC ABRT }
+[  159.303215] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.303865] ata4.00: cmd 61/00:80:00:80:01/08:00:00:00:00/40 tag 16 ncq dma 1048576 ou
+                        res 41/84:01:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.305191] ata4.00: status: { DRDY ERR }
+[  159.305849] ata4.00: error: { ICRC ABRT }
+[  159.306503] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.307151] ata4.00: cmd 61/00:88:00:88:01/08:00:00:00:00/40 tag 17 ncq dma 1048576 ou
+                        res 41/84:01:01:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.308466] ata4.00: status: { DRDY ERR }
+[  159.309134] ata4.00: error: { ICRC ABRT }
+[  159.309792] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.310441] ata4.00: cmd 61/70:90:00:90:01/05:00:00:00:00/40 tag 18 ncq dma 712704 out
+                        res 41/84:00:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.311756] ata4.00: status: { DRDY ERR }
+[  159.312412] ata4.00: error: { ICRC ABRT }
+[  159.313079] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.313731] ata4.00: cmd 61/90:98:70:95:01/02:00:00:00:00/40 tag 19 ncq dma 335872 out
+                        res 41/84:01:00:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.315047] ata4.00: status: { DRDY ERR }
+[  159.315707] ata4.00: error: { ICRC ABRT }
+[  159.316352] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.317006] ata4.00: cmd 61/00:a0:00:18:01/08:00:00:00:00/40 tag 20 ncq dma 1048576 ou
+                        res 41/84:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.318318] ata4.00: status: { DRDY ERR }
+[  159.318966] ata4.00: error: { ICRC ABRT }
+[  159.319606] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.320240] ata4.00: cmd 61/00:a8:00:20:01/08:00:00:00:00/40 tag 21 ncq dma 1048576 ou
+                        res 41/84:01:03:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.321562] ata4.00: status: { DRDY ERR }
+[  159.322212] ata4.00: error: { ICRC ABRT }
+[  159.322852] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.323486] ata4.00: cmd 61/00:b0:00:28:01/08:00:00:00:00/40 tag 22 ncq dma 1048576 ou
+                        res 41/84:01:07:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.324806] ata4.00: status: { DRDY ERR }
+[  159.325454] ata4.00: error: { ICRC ABRT }
+[  159.326094] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.326727] ata4.00: cmd 61/00:b8:00:30:01/08:00:00:00:00/40 tag 23 ncq dma 1048576 ou
+                        res 41/84:01:09:4f:c2/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.328035] ata4.00: status: { DRDY ERR }
+[  159.328702] ata4.00: error: { ICRC ABRT }
+[  159.329345] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.330019] ata4.00: cmd 61/00:f8:00:38:01/08:00:00:00:00/40 tag 31 ncq dma 1048576 ou
+                        res 41/84:01:04:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.331329] ata4.00: status: { DRDY ERR }
+[  159.331976] ata4.00: error: { ICRC ABRT }
+[  159.332619] ata4: hard resetting link
+[  159.800928] ata4: SATA link up 3.0 Gbps (SStatus 123 SControl 320)
+[  159.802288] ata4.00: configured for UDMA/133
+[  159.802497] ata4: EH complete
+[  159.857033] ata4: limiting SATA link speed to 1.5 Gbps
+[  159.857054] ata4.00: exception Emask 0x11 SAct 0x3fc0 SErr 0x400000 action 0x6 frozen
+[  159.858763] ata4.00: irq_stat 0x48000008, interface fatal error
+[  159.860375] ata4: SError: { Handshk }
+[  159.862055] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.863664] ata4.00: cmd 61/00:30:00:88:01/08:00:00:00:00/40 tag 6 ncq dma 1048576 ou
+                        res 41/84:01:04:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.866924] ata4.00: status: { DRDY ERR }
+[  159.868555] ata4.00: error: { ICRC ABRT }
+[  159.870243] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.871851] ata4.00: cmd 61/70:38:00:90:01/05:00:00:00:00/40 tag 7 ncq dma 712704 out
+                        res 41/84:01:04:01:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.875167] ata4.00: status: { DRDY ERR }
+[  159.876833] ata4.00: error: { ICRC ABRT }
+[  159.878457] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.880067] ata4.00: cmd 61/90:40:70:95:01/02:00:00:00:00/40 tag 8 ncq dma 335872 out
+                        res 41/84:01:04:04:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.883342] ata4.00: status: { DRDY ERR }
+[  159.884294] ata4.00: error: { ICRC ABRT }
+[  159.885201] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.885989] ata4.00: cmd 61/00:48:00:18:01/08:00:00:00:00/40 tag 9 ncq dma 1048576 ou
+                        res 41/84:01:04:05:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.887520] ata4.00: status: { DRDY ERR }
+[  159.888288] ata4.00: error: { ICRC ABRT }
+[  159.889074] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.889751] ata4.00: cmd 61/00:50:00:20:01/08:00:00:00:00/40 tag 10 ncq dma 1048576 ou
+                        res 41/84:01:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.891072] ata4.00: status: { DRDY ERR }
+[  159.891730] ata4.00: error: { ICRC ABRT }
+[  159.892385] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.893048] ata4.00: cmd 61/00:58:00:28:01/08:00:00:00:00/40 tag 11 ncq dma 1048576 ou
+                        res 41/84:01:04:07:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.894383] ata4.00: status: { DRDY ERR }
+[  159.895044] ata4.00: error: { ICRC ABRT }
+[  159.895700] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.896350] ata4.00: cmd 61/00:60:00:30:01/08:00:00:00:00/40 tag 12 ncq dma 1048576 ou
+                        res 41/84:01:11:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.897681] ata4.00: status: { DRDY ERR }
+[  159.898349] ata4.00: error: { ICRC ABRT }
+[  159.899009] ata4.00: failed command: WRITE FPDMA QUEUED
+[  159.899674] ata4.00: cmd 61/00:68:00:38:01/08:00:00:00:00/40 tag 13 ncq dma 1048576 ou
+                        res 41/84:ff:00:00:00/00:00:00:00:00/00 Emask 0x10 (ATA bus error)
+[  159.901005] ata4.00: status: { DRDY ERR }
+[  159.901672] ata4.00: error: { ICRC ABRT }
+[  159.902335] ata4: hard resetting link
+[  160.368918] ata4: SATA link up 1.5 Gbps (SStatus 113 SControl 310)
+[  160.371540] ata4.00: configured for UDMA/133
+[  160.371705] ata4: EH complete
+[ 1569.515963] kauditd_printk_skb: 115 callbacks suppressed
+[ 1569.515973] audit: type=1400 audit(1792882623.012:127): apparmor="DENIED" operation="open" class="file" profile="/usr/sbin/cupsd" name="/etc/paperspecs" pid=1266 comm="cupsd" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[ 1569.524955] audit: type=1400 audit(1792882623.020:128): apparmor="DENIED" operation="capable" class="cap" profile="/usr/sbin/cupsd" pid=1266 comm="cupsd" capability=12  capname="net_admin"

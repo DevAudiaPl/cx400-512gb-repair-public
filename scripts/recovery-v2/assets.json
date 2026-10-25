@@ -1,0 +1,105 @@
+{
+  "version": 2,
+  "normal_version": "SBFM61.3",
+  "burner": "SBBQ61L3",
+  "source_exe_sha256": "1e071b93ec8e629d9bdb6b7222432594a998afcc09df6e9fbea843227e384a93",
+  "files": {
+    "burner_loader.py": {
+      "size": 14115,
+      "sha256": "289cfaa9bc2076daa2cb6d6843da7412cc7b786fdf3f8ee82bba8b3095c5c048"
+    },
+    "infoblock-template.bin": {
+      "size": 512,
+      "sha256": "7a10f335da91f918caab3302ac5246cdf6608898d75abaddee53941fa2c4de7d"
+    },
+    "iram-section0.bin": {
+      "size": 131072,
+      "sha256": "ce41164f170d8db63af060e81571bd73ea91bcfe7d8e3091a7a7c80a23389d5d"
+    },
+    "iram-section1.bin": {
+      "size": 32768,
+      "sha256": "19c9db0797698602bf44f9fb2723886855cdce44e02df64a6cee1972407781c3"
+    },
+    "iram-section2.bin": {
+      "size": 32768,
+      "sha256": "f126bbc0799e88e621f67ab28733369a033f1f880cce500ddfe9fac621007432"
+    },
+    "iram-section3.bin": {
+      "size": 16384,
+      "sha256": "89e700b0a2137b12e9ed2391505198bb1a6346d079869d44290d5b8cd1ff9851"
+    },
+    "iram-section4.bin": {
+      "size": 4096,
+      "sha256": "87f0ce414ef79d20eeb36371409fffd3738902c8019b98463f895d70747798f0"
+    },
+    "link_guard.py": {
+      "size": 1232,
+      "sha256": "b544f9c76d8822a5e8d615c6bf4f8c998e47fa359409e5c292d6a35a098baa0c"
+    },
+    "normal-layout.json": {
+      "size": 1815,
+      "sha256": "e796108ff959ad5cafb91d397ade2c5d6ed4418a7372c09791c45f042213ee0d"
+    },
+    "normal-SBFM61.3.bin": {
+      "size": 786432,
+      "sha256": "c73d0b4d06bc44be913f4876f9fc21935ca4f6f51fce3b2c4f95f80add3f7d1e"
+    },
+    "normal-section0.bin": {
+      "size": 131072,
+      "sha256": "5137ebb2c60b6cb7f4d37a0217de547a71b3916340adb5680d55b5332afb5494"
+    },
+    "normal-section1.bin": {
+      "size": 32768,
+      "sha256": "58b5e0e26f6248cf54a4931b001daf2d9fdd4f700ee0d83b7639bbef0a2d575b"
+    },
+    "normal-section2.bin": {
+      "size": 524288,
+      "sha256": "04cec39118bbd4c58544359b60f7b5a8b2d8155ab5601cf5f4acdf822e5141a3"
+    },
+    "normal-section3.bin": {
+      "size": 32768,
+      "sha256": "913d5d4065eca28279d2955ebe277212f033420a483d36a47b892595b1c1bec0"
+    },
+    "normal-section4.bin": {
+      "size": 32768,
+      "sha256": "a6baefd5d6d0cd5a65aef7f13bce2149cbb6806b8b054a2b743ef06db54785bc"
+    },
+    "normal-section5.bin": {
+      "size": 16384,
+      "sha256": "af805f2aa1e7b297e0ef38d836ad9d81724e9031101c3563f2254b2e7c5574d1"
+    },
+    "regression-xor0561.bin": {
+      "size": 16384,
+      "sha256": "640f140f24e45ccc3a690f23c99d49c8b7279dc7094c0cd88cc46df087c534fc"
+    },
+    "service_probe.py": {
+      "size": 23907,
+      "sha256": "a0bf136223464f420abf604e87757ae8771533987c3fa9d82073dfa0a5ba6945"
+    },
+    "smart-template.bin": {
+      "size": 512,
+      "sha256": "2f8598052b7e4f3302aaf343f323b1458153b7f93d1978a527649fcff0e04a1c"
+    },
+    "sram-xor.bin": {
+      "size": 524288,
+      "sha256": "f2545bc17088b90f3bef32d91fd235c29727dd6a86d997240865acadbac35929"
+    },
+    "trace_capture.py": {
+      "size": 6369,
+      "sha256": "c6f2753e05892d0e39ae043560743885361db7c7480fb638ce0af3f67f3bea4e"
+    },
+    "erase09-burner-guard.bin": {
+      "size": 37,
+      "sha256": "ee0a06fc951d9f7fde6abcf4efe92cc9501ffaba0482bec733e0b7ee6590df82"
+    },
+    "erase09-host-frame.bin": {
+      "size": 79,
+      "sha256": "6d8d6595c1f1a6358d5cc4c7da798abd8980105b6c85a2ae26874f7536d65ae8"
+    },
+    "regression-212838.json": {
+      "size": 2274,
+      "sha256": "c8aaf6a8476ade6db9ca0ae3c8658fca050c51833e216148241383ba1fa5948d"
+    }
+  },
+  "correction": "SBBQ61L3 erase09 LBA Low88, statically confirmed in burner and MP_API2.2.85"
+}

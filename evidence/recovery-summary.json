@@ -1,0 +1,36 @@
+{
+  "kind": "derived-summary-of-private-original",
+  "original_report_sha256": "ef743881389b63edff2b70f2a942539f0406966f4b213c216c69716bae300332",
+  "original_result_zip_sha256": "24f1b1397b4fb5d8b15bb26b8cac4876e3bc0cedcac1f6d707fe340c600e52f1",
+  "events": 1043,
+  "command_completions": 481,
+  "rejected_commands": 0,
+  "stage_counts": {
+    "package": 1,
+    "<none>": 2,
+    "dmesg": 2,
+    "target": 1,
+    "kernel_trace_started": 1,
+    "command_start": 481,
+    "command_end": 481,
+    "fresh_identity": 1,
+    "system_info": 9,
+    "memory_word": 52,
+    "factory_init_required": 1,
+    "command_wait": 2,
+    "seed_readback": 1,
+    "normal_code_crc": 1,
+    "staging_verified": 6,
+    "kernel_trace_saved": 1
+  },
+  "final_event": {
+    "time": "2026-10-24T22:08:47.930088+02:00",
+    "result": "PROGRAMMED_AND_VERIFIED_POWER_CYCLE_REQUIRED",
+    "nand_code_readback_bytes": 770048,
+    "normal_version": "SBFM61.3",
+    "note": "Not yet a confirmed repaired SSD. Cold start and normal capacity verification required."
+  },
+  "code_bytes": 770048,
+  "code_sha256": "bbd7764602bb65e08eeb60e52adbc6ea8587d8c88a4ed1a8ed9474c7d6c473d4",
+  "header_sha256": "f608138e0be8d7d8d8d4f0cac6f9b23df0d7eabaa25a93c0b1853067c9922853"
+}

@@ -1,0 +1,1205 @@
+[
+  {
+    "time": "2026-10-25T06:50:39.581589+01:00",
+    "stage": "package",
+    "version": "cx400-cold-verify-3",
+    "mode": "verify",
+    "script_sha256": "e74b5c95825309b4e87cc364ab51c71c5f8f896d26a47d669a475f83a5911d6f"
+  },
+  {
+    "time": "2026-10-25T06:50:39.582026+01:00",
+    "stage": "host_boot",
+    "cmdline": "BOOT_IMAGE=/boot/vmlinuz-6.12.113+deb13-amd64 root=UUID=1dbf9e14-5e1f-4408-9c9e-2b7ff4f838c9 ro quiet pci=nomsi libata.force=4:1.5Gbps"
+  },
+  {
+    "time": "2026-10-25T06:50:39.896998+01:00",
+    "stage": "target",
+    "device": "/dev/sdb",
+    "path": "/sys/devices/pci0000:00/0000:00:11.0/ata4/host3/target3:0:0/3:0:0:0",
+    "serial": "CX4R2610242000213B51",
+    "bytes": 512110190592,
+    "power_cycles": 3,
+    "sata_speed": "1.5 Gb/s",
+    "mode": "read-only"
+  },
+  {
+    "time": "2026-10-25T06:50:40.166236+01:00",
+    "stage": "fio_start",
+    "mode": "verify",
+    "bytes": 512110190592,
+    "command": [
+      "fio",
+      "--readonly",
+      "--output-format=json",
+      "--eta=never",
+      "--exitall_on_error=1",
+      "/home/operator/cx400-final-test-v2/cx400-final-verify-result-20261025-065039/cx400-full.fio"
+    ]
+  },
+  {
+    "time": "2026-10-25T06:51:10.169081+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 30,
+    "read_since_start_bytes": 4236247040,
+    "recent_MBps": 141.19677805422654,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:51:40.169988+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 60,
+    "read_since_start_bytes": 8516534272,
+    "recent_MBps": 142.67171493491497,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:52:10.170906+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 90,
+    "read_since_start_bytes": 12798918656,
+    "recent_MBps": 142.7417986178244,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:52:40.171834+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 120,
+    "read_since_start_bytes": 17082351616,
+    "recent_MBps": 142.77663195208746,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:53:10.172765+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 150,
+    "read_since_start_bytes": 21365784576,
+    "recent_MBps": 142.77666985334847,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:53:40.173694+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 180,
+    "read_since_start_bytes": 25651314688,
+    "recent_MBps": 142.84656134336058,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:54:10.174676+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 210,
+    "read_since_start_bytes": 29934747648,
+    "recent_MBps": 142.77668699077827,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:54:40.175554+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 240,
+    "read_since_start_bytes": 34218180608,
+    "recent_MBps": 142.7767027861529,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:55:10.176478+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 270,
+    "read_since_start_bytes": 38498467840,
+    "recent_MBps": 142.67183158921512,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:55:40.177416+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 300,
+    "read_since_start_bytes": 42782949376,
+    "recent_MBps": 142.81154409147038,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:56:10.178340+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 330,
+    "read_since_start_bytes": 47067430912,
+    "recent_MBps": 142.8116925585806,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:56:40.179490+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 360,
+    "read_since_start_bytes": 51351912448,
+    "recent_MBps": 142.8105612288021,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:57:10.180652+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 390,
+    "read_since_start_bytes": 55636393984,
+    "recent_MBps": 142.81153587530574,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:57:40.181591+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 420,
+    "read_since_start_bytes": 59919826944,
+    "recent_MBps": 142.77563528559477,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:58:10.182740+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 450,
+    "read_since_start_bytes": 64204308480,
+    "recent_MBps": 142.8115350946275,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:58:40.183687+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 480,
+    "read_since_start_bytes": 68485644288,
+    "recent_MBps": 142.7057204693421,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:59:10.184612+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 510,
+    "read_since_start_bytes": 72771174400,
+    "recent_MBps": 142.84661499964193,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T06:59:40.185550+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 540,
+    "read_since_start_bytes": 77052510208,
+    "recent_MBps": 142.70669483804193,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:00:10.186537+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 570,
+    "read_since_start_bytes": 81335943168,
+    "recent_MBps": 142.77670197235042,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:00:40.187469+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 600,
+    "read_since_start_bytes": 85621473280,
+    "recent_MBps": 142.84629332443413,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:01:10.188396+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 630,
+    "read_since_start_bytes": 89906663424,
+    "recent_MBps": 142.83525153455386,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:01:40.189319+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 660,
+    "read_since_start_bytes": 94190436352,
+    "recent_MBps": 142.7880442609122,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:02:10.190223+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 690,
+    "read_since_start_bytes": 98474917888,
+    "recent_MBps": 142.81179390901778,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:02:40.191165+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 720,
+    "read_since_start_bytes": 102759399424,
+    "recent_MBps": 142.8114949039836,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:03:10.192049+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 750,
+    "read_since_start_bytes": 107041783808,
+    "recent_MBps": 142.74196871824796,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:03:40.192983+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 780,
+    "read_since_start_bytes": 111321022464,
+    "recent_MBps": 142.6368321260326,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:04:10.193909+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 810,
+    "read_since_start_bytes": 115605504000,
+    "recent_MBps": 142.81164614145192,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:04:40.195096+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 840,
+    "read_since_start_bytes": 119892082688,
+    "recent_MBps": 142.88128303425466,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:05:10.196195+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 870,
+    "read_since_start_bytes": 124176564224,
+    "recent_MBps": 142.81056719329334,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:05:40.197135+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 900,
+    "read_since_start_bytes": 128461045760,
+    "recent_MBps": 142.8108923374088,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:06:10.198060+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 930,
+    "read_since_start_bytes": 132745527296,
+    "recent_MBps": 142.81157924581134,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:06:40.199025+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 960,
+    "read_since_start_bytes": 137031057408,
+    "recent_MBps": 142.84643843258334,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:07:10.199970+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 990,
+    "read_since_start_bytes": 141314490368,
+    "recent_MBps": 142.77661432924614,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:07:40.201036+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1020,
+    "read_since_start_bytes": 145597923328,
+    "recent_MBps": 142.7761949421035,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:08:10.202073+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1050,
+    "read_since_start_bytes": 149880307712,
+    "recent_MBps": 142.74103036617555,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:08:40.203017+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1080,
+    "read_since_start_bytes": 154162692096,
+    "recent_MBps": 142.74165882090222,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:09:10.203950+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1110,
+    "read_since_start_bytes": 158445076480,
+    "recent_MBps": 142.74170197511924,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:09:40.204911+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1140,
+    "read_since_start_bytes": 162730606592,
+    "recent_MBps": 142.8465509396938,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:10:10.205801+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1170,
+    "read_since_start_bytes": 167016136704,
+    "recent_MBps": 142.84662636512314,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:10:40.206780+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1200,
+    "read_since_start_bytes": 171300618240,
+    "recent_MBps": 142.8116436232844,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:11:10.207707+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1230,
+    "read_since_start_bytes": 175585099776,
+    "recent_MBps": 142.8113885795365,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:11:40.208631+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1260,
+    "read_since_start_bytes": 179869581312,
+    "recent_MBps": 142.8116660011811,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:12:10.209670+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1290,
+    "read_since_start_bytes": 184155820032,
+    "recent_MBps": 142.86966082227957,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:12:40.210681+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1320,
+    "read_since_start_bytes": 188440641536,
+    "recent_MBps": 142.82299402570064,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:13:10.211793+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1350,
+    "read_since_start_bytes": 192724074496,
+    "recent_MBps": 142.77551997497886,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:13:40.212706+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1380,
+    "read_since_start_bytes": 197009604608,
+    "recent_MBps": 142.84666920828738,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:14:10.213643+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1410,
+    "read_since_start_bytes": 201294086144,
+    "recent_MBps": 142.8114662188359,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:14:40.214634+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1440,
+    "read_since_start_bytes": 205578567680,
+    "recent_MBps": 142.81160556516593,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:15:10.215723+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1470,
+    "read_since_start_bytes": 209859903488,
+    "recent_MBps": 142.70586510570317,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:15:40.216668+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1500,
+    "read_since_start_bytes": 214145433600,
+    "recent_MBps": 142.84636244550884,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:16:10.217601+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1530,
+    "read_since_start_bytes": 218424672256,
+    "recent_MBps": 142.63686224048777,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:16:40.218728+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1560,
+    "read_since_start_bytes": 222709882880,
+    "recent_MBps": 142.83521699809845,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:17:10.219662+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1590,
+    "read_since_start_bytes": 226994683904,
+    "recent_MBps": 142.822022336167,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:17:40.220623+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1620,
+    "read_since_start_bytes": 231276019712,
+    "recent_MBps": 142.7066280106352,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:18:10.221571+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1650,
+    "read_since_start_bytes": 235560501248,
+    "recent_MBps": 142.81152237052302,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:18:40.222540+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1680,
+    "read_since_start_bytes": 239846031360,
+    "recent_MBps": 142.84656752366334,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:19:10.223477+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1710,
+    "read_since_start_bytes": 244128415744,
+    "recent_MBps": 142.74150064450097,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:19:40.224575+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1740,
+    "read_since_start_bytes": 248411848704,
+    "recent_MBps": 142.77590083384948,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:20:10.225490+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1770,
+    "read_since_start_bytes": 252694233088,
+    "recent_MBps": 142.74189036000138,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:20:40.226491+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1800,
+    "read_since_start_bytes": 256975568896,
+    "recent_MBps": 142.7066000029824,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:21:10.227432+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1830,
+    "read_since_start_bytes": 261259001856,
+    "recent_MBps": 142.776326539283,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:21:40.228370+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1860,
+    "read_since_start_bytes": 265543483392,
+    "recent_MBps": 142.81161038252864,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:22:10.229301+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1890,
+    "read_since_start_bytes": 269829013504,
+    "recent_MBps": 142.8465603053741,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:22:40.230178+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1920,
+    "read_since_start_bytes": 274113495040,
+    "recent_MBps": 142.81194700362116,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:23:10.231072+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1950,
+    "read_since_start_bytes": 278395879424,
+    "recent_MBps": 142.74183520144294,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:23:40.232016+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 1980,
+    "read_since_start_bytes": 282680360960,
+    "recent_MBps": 142.81154004527113,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:24:10.232947+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2010,
+    "read_since_start_bytes": 286965891072,
+    "recent_MBps": 142.84658597410638,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:24:40.233853+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2040,
+    "read_since_start_bytes": 291249324032,
+    "recent_MBps": 142.77676673389922,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:25:10.234826+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2070,
+    "read_since_start_bytes": 295533805568,
+    "recent_MBps": 142.8116508731312,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:25:40.235782+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2100,
+    "read_since_start_bytes": 299817238528,
+    "recent_MBps": 142.77641245449752,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:26:10.236730+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2130,
+    "read_since_start_bytes": 304102768640,
+    "recent_MBps": 142.8464017841305,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:26:40.237621+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2160,
+    "read_since_start_bytes": 308385153024,
+    "recent_MBps": 142.74196174312948,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:27:10.238607+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2190,
+    "read_since_start_bytes": 312669634560,
+    "recent_MBps": 142.81157479974854,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:27:40.239553+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2220,
+    "read_since_start_bytes": 316953067520,
+    "recent_MBps": 142.77635532203493,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:28:10.240484+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2250,
+    "read_since_start_bytes": 321233354752,
+    "recent_MBps": 142.67179006825265,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:28:40.241441+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2280,
+    "read_since_start_bytes": 325518884864,
+    "recent_MBps": 142.8465859979153,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:29:10.242386+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2310,
+    "read_since_start_bytes": 329801269248,
+    "recent_MBps": 142.74148687515324,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:29:40.243328+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2340,
+    "read_since_start_bytes": 334081556480,
+    "recent_MBps": 142.67179496174055,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:30:10.244437+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2370,
+    "read_since_start_bytes": 338363940864,
+    "recent_MBps": 142.74166375960823,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:30:40.245384+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2400,
+    "read_since_start_bytes": 342648422400,
+    "recent_MBps": 142.81075351609047,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:31:10.246311+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2430,
+    "read_since_start_bytes": 346932903936,
+    "recent_MBps": 142.81162638169334,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:31:40.247237+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2460,
+    "read_since_start_bytes": 351214239744,
+    "recent_MBps": 142.70677702504014,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:32:10.248168+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2490,
+    "read_since_start_bytes": 355494526976,
+    "recent_MBps": 142.67182127436087,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:32:40.249093+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2520,
+    "read_since_start_bytes": 359777959936,
+    "recent_MBps": 142.77666589855818,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:33:10.250037+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2550,
+    "read_since_start_bytes": 364061392896,
+    "recent_MBps": 142.7766277974166,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:33:40.250986+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2580,
+    "read_since_start_bytes": 368345874432,
+    "recent_MBps": 142.81153720341106,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:34:10.251869+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2610,
+    "read_since_start_bytes": 372630355968,
+    "recent_MBps": 142.81186903058133,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:34:40.252775+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2640,
+    "read_since_start_bytes": 376913788928,
+    "recent_MBps": 142.77692478791803,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:35:10.253928+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2670,
+    "read_since_start_bytes": 381198270464,
+    "recent_MBps": 142.81056489889215,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:35:40.254892+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2700,
+    "read_since_start_bytes": 385480654848,
+    "recent_MBps": 142.7414516334397,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:36:10.255867+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2730,
+    "read_since_start_bytes": 389765136384,
+    "recent_MBps": 142.81149982130373,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:36:40.256776+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2760,
+    "read_since_start_bytes": 394046472192,
+    "recent_MBps": 142.7068435196142,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:37:10.257710+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2790,
+    "read_since_start_bytes": 398330953728,
+    "recent_MBps": 142.81148343658631,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:37:40.258696+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2820,
+    "read_since_start_bytes": 402615435264,
+    "recent_MBps": 142.81163117525648,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:38:10.259623+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2850,
+    "read_since_start_bytes": 406899916800,
+    "recent_MBps": 142.81135574351623,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:38:40.260542+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2880,
+    "read_since_start_bytes": 411185446912,
+    "recent_MBps": 142.8467648698626,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:39:10.261462+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2910,
+    "read_since_start_bytes": 415469928448,
+    "recent_MBps": 142.8115331429333,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:39:40.262391+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2940,
+    "read_since_start_bytes": 419751264256,
+    "recent_MBps": 142.70679136662855,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:40:10.263512+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 2970,
+    "read_since_start_bytes": 424035745792,
+    "recent_MBps": 142.81071036029437,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:40:40.264402+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3000,
+    "read_since_start_bytes": 428320227328,
+    "recent_MBps": 142.8118047005082,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:41:10.265332+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3030,
+    "read_since_start_bytes": 432601563136,
+    "recent_MBps": 142.70678530653322,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:41:40.266229+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3060,
+    "read_since_start_bytes": 436883947520,
+    "recent_MBps": 142.7419535928025,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:42:10.267151+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3090,
+    "read_since_start_bytes": 441168429056,
+    "recent_MBps": 142.81158938987681,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:42:40.268082+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3120,
+    "read_since_start_bytes": 445453959168,
+    "recent_MBps": 142.8465822364036,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:43:10.269039+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3150,
+    "read_since_start_bytes": 449737392128,
+    "recent_MBps": 142.77667418886526,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:43:40.269984+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3180,
+    "read_since_start_bytes": 454019776512,
+    "recent_MBps": 142.74148304980787,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:44:10.271038+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3210,
+    "read_since_start_bytes": 458305306624,
+    "recent_MBps": 142.8459893439069,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:44:40.271978+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3240,
+    "read_since_start_bytes": 462584545280,
+    "recent_MBps": 142.6368375080276,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:45:10.272910+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3270,
+    "read_since_start_bytes": 466865881088,
+    "recent_MBps": 142.7067364119611,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:45:40.273847+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3300,
+    "read_since_start_bytes": 471146168320,
+    "recent_MBps": 142.67180107741686,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:46:10.274817+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3330,
+    "read_since_start_bytes": 475428552704,
+    "recent_MBps": 142.74156666984243,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:46:40.275764+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3360,
+    "read_since_start_bytes": 479710937088,
+    "recent_MBps": 142.7416067123371,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:47:10.276638+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3390,
+    "read_since_start_bytes": 483994370048,
+    "recent_MBps": 142.77695696890282,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:47:40.277718+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3420,
+    "read_since_start_bytes": 488269414400,
+    "recent_MBps": 142.49637555254213,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:48:10.278905+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3450,
+    "read_since_start_bytes": 492554944512,
+    "recent_MBps": 142.84544373632005,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:48:40.279933+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3480,
+    "read_since_start_bytes": 496839426048,
+    "recent_MBps": 142.8110345530187,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:49:10.280864+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3510,
+    "read_since_start_bytes": 501123907584,
+    "recent_MBps": 142.81162714809253,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:49:40.281806+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3540,
+    "read_since_start_bytes": 505407340544,
+    "recent_MBps": 142.7766309526826,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:50:10.283016+01:00",
+    "stage": "fio_wait",
+    "mode": "verify",
+    "seconds": 3570,
+    "read_since_start_bytes": 509690773504,
+    "recent_MBps": 142.77545792718755,
+    "counter_valid": true
+  },
+  {
+    "time": "2026-10-25T07:50:27.937134+01:00",
+    "stage": "fio_end",
+    "mode": "verify",
+    "returncode": 0
+  },
+  {
+    "time": "2026-10-25T07:50:28.035034+01:00",
+    "result": "DATA_VERIFIED_WITH_KERNEL_WARNINGS",
+    "bytes": 512110190592,
+    "unique_pattern_matched": true,
+    "header_crc32c": true,
+    "write_power_cycles": 2,
+    "read_power_cycles": 3,
+    "kernel_warnings": [],
+    "write_kernel_warnings": [
+      "[  157.980973] ata4.00: exception Emask 0x10 SAct 0x78fff800 SErr 0x4c0000 action 0x6 frozen",
+      "[  157.981139] ata4: SError: { CommWake 10B8B Handshk }",
+      "[  157.981166] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981277] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981383] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981488] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981592] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981697] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981802] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981906] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.982011] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.982115] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.982220] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.985189] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.992140] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.999143] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.006130] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.013106] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.020084] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.027173] ata4: hard resetting link",
+      "[  158.664989] ata4.00: exception Emask 0x11 SAct 0x70f801ff SErr 0x400000 action 0x6 frozen",
+      "[  158.668715] ata4: SError: { Handshk }",
+      "[  158.670462] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.679282] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.688091] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.696799] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.705427] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.714038] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.718501] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.722329] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.725848] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.729181] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.732462] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.735743] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.739021] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.742298] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.745653] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.748938] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.752214] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.755536] ata4: hard resetting link",
+      "[  159.273024] ata4.00: exception Emask 0x11 SAct 0x80ffc007 SErr 0x400000 action 0x6 frozen",
+      "[  159.276402] ata4: SError: { Handshk }",
+      "[  159.278122] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.286331] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.293117] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.296573] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.299922] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.303215] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.306503] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.309792] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.313079] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.316352] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.319606] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.322852] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.326094] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.329345] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.332619] ata4: hard resetting link",
+      "[  159.857033] ata4: limiting SATA link speed to 1.5 Gbps",
+      "[  159.857054] ata4.00: exception Emask 0x11 SAct 0x3fc0 SErr 0x400000 action 0x6 frozen",
+      "[  159.860375] ata4: SError: { Handshk }",
+      "[  159.862055] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.870243] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.878457] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.885201] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.889074] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.892385] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.895700] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.899009] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.902335] ata4: hard resetting link"
+    ],
+    "smart_counter_changes": {},
+    "read_sata_speed": {
+      "sata_value": 1,
+      "string": "1.5 Gb/s",
+      "units_per_second": 15,
+      "bits_per_unit": 100000000
+    },
+    "next": "Przeka\u017c ZIP do oceny. Zachowaj zako\u0144czony zapis i jego stan."
+  }
+]

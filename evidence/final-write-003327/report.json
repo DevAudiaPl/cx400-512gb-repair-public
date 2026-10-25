@@ -1,0 +1,1145 @@
+[
+  {
+    "time": "2026-10-25T00:33:27.018157+02:00",
+    "stage": "package",
+    "version": "cx400-final-test-2",
+    "mode": "write",
+    "script_sha256": "1acc7ab9fcfe93495a89f293fb0e6b1e22d5eb07efbedb2c160aff3a6e1ca95c"
+  },
+  {
+    "time": "2026-10-25T00:33:27.018765+02:00",
+    "stage": "host_boot",
+    "cmdline": "BOOT_IMAGE=/boot/vmlinuz-6.12.113+deb13-amd64 root=UUID=1dbf9e14-5e1f-4408-9c9e-2b7ff4f838c9 ro quiet pci=nomsi libata.force=4:3.0 Gbps"
+  },
+  {
+    "time": "2026-10-25T00:33:27.325567+02:00",
+    "stage": "target",
+    "device": "/dev/sdb",
+    "path": "/sys/devices/pci0000:00/0000:00:11.0/ata4/host3/target3:0:0/3:0:0:0",
+    "serial": "CX4R2610242000213B51",
+    "bytes": 512110190592,
+    "power_cycles": 2
+  },
+  {
+    "time": "2026-10-25T00:33:27.332409+02:00",
+    "stage": "fio_start",
+    "mode": "write",
+    "bytes": 7692288,
+    "command": [
+      "fio",
+      "--output-format=json",
+      "--eta=never",
+      "--exitall_on_error=1",
+      "/home/operator/cx400-final-test-v2/cx400-final-write-result-20261025-003327/sanity-write.fio"
+    ]
+  },
+  {
+    "time": "2026-10-25T00:33:28.304584+02:00",
+    "stage": "fio_end",
+    "mode": "write",
+    "returncode": 0
+  },
+  {
+    "time": "2026-10-25T00:33:28.308025+02:00",
+    "stage": "fio_start",
+    "mode": "verify",
+    "bytes": 7692288,
+    "command": [
+      "fio",
+      "--output-format=json",
+      "--eta=never",
+      "--exitall_on_error=1",
+      "--readonly",
+      "/home/operator/cx400-final-test-v2/cx400-final-write-result-20261025-003327/sanity-verify.fio"
+    ]
+  },
+  {
+    "time": "2026-10-25T00:33:29.028297+02:00",
+    "stage": "fio_end",
+    "mode": "verify",
+    "returncode": 0
+  },
+  {
+    "time": "2026-10-25T00:33:29.031853+02:00",
+    "stage": "fio_start",
+    "mode": "verify",
+    "bytes": 7692288,
+    "command": [
+      "fio",
+      "--output-format=json",
+      "--eta=never",
+      "--exitall_on_error=1",
+      "--readonly",
+      "/home/operator/cx400-final-test-v2/cx400-final-write-result-20261025-003327/sanity-wrong-pattern-EXPECTED.fio"
+    ]
+  },
+  {
+    "time": "2026-10-25T00:33:30.003819+02:00",
+    "stage": "fio_end",
+    "mode": "verify",
+    "returncode": 2
+  },
+  {
+    "time": "2026-10-25T00:33:30.006615+02:00",
+    "stage": "fio_output_diagnostics",
+    "file": "sanity-wrong-pattern-EXPECTED.json",
+    "text": "fio: pid=1183, err=84/file:io_u.c:2290, func=io_u_queued_complete, error=Invalid or incomplete multibyte or wide character\nfio: pid=1184, err=84/file:io_u.c:2290, func=io_u_queued_complete, error=Invalid or incomplete multibyte or wide character"
+  },
+  {
+    "time": "2026-10-25T00:33:30.007135+02:00",
+    "stage": "fio_expected_mismatch_detected",
+    "test": "wrong_pattern",
+    "note": "Private host regular file only"
+  },
+  {
+    "time": "2026-10-25T00:33:30.011133+02:00",
+    "stage": "fio_start",
+    "mode": "verify",
+    "bytes": 7692288,
+    "command": [
+      "fio",
+      "--output-format=json",
+      "--eta=never",
+      "--exitall_on_error=1",
+      "--readonly",
+      "/home/operator/cx400-final-test-v2/cx400-final-write-result-20261025-003327/sanity-corruption-EXPECTED.fio"
+    ]
+  },
+  {
+    "time": "2026-10-25T00:33:30.781490+02:00",
+    "stage": "fio_end",
+    "mode": "verify",
+    "returncode": 1
+  },
+  {
+    "time": "2026-10-25T00:33:30.784400+02:00",
+    "stage": "fio_output_diagnostics",
+    "file": "sanity-corruption-EXPECTED.json",
+    "text": "fio: pid=1189, err=84/file:io_u.c:2290, func=io_u_queued_complete, error=Invalid or incomplete multibyte or wide character"
+  },
+  {
+    "time": "2026-10-25T00:33:30.785155+02:00",
+    "stage": "fio_expected_mismatch_detected",
+    "test": "bit_flip",
+    "note": "Private host regular file only"
+  },
+  {
+    "time": "2026-10-25T00:33:30.785462+02:00",
+    "stage": "fio_sanity_pass",
+    "note": "Good regular-file read accepted; deliberate corruption rejected"
+  },
+  {
+    "time": "2026-10-25T00:33:31.091841+02:00",
+    "stage": "fio_start",
+    "mode": "write",
+    "bytes": 512110190592,
+    "command": [
+      "fio",
+      "--output-format=json",
+      "--eta=never",
+      "--exitall_on_error=1",
+      "/home/operator/cx400-final-test-v2/cx400-final-write-result-20261025-003327/cx400-full.fio"
+    ]
+  },
+  {
+    "time": "2026-10-25T00:34:01.093882+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 30
+  },
+  {
+    "time": "2026-10-25T00:34:31.094470+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 60
+  },
+  {
+    "time": "2026-10-25T00:35:01.095061+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 90
+  },
+  {
+    "time": "2026-10-25T00:35:31.095661+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 120
+  },
+  {
+    "time": "2026-10-25T00:36:01.096247+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 150
+  },
+  {
+    "time": "2026-10-25T00:36:31.096894+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 180
+  },
+  {
+    "time": "2026-10-25T00:37:01.097498+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 210
+  },
+  {
+    "time": "2026-10-25T00:37:31.098151+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 240
+  },
+  {
+    "time": "2026-10-25T00:38:01.098739+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 270
+  },
+  {
+    "time": "2026-10-25T00:38:31.099334+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 300
+  },
+  {
+    "time": "2026-10-25T00:39:01.099983+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 330
+  },
+  {
+    "time": "2026-10-25T00:39:31.100612+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 360
+  },
+  {
+    "time": "2026-10-25T00:40:01.101214+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 390
+  },
+  {
+    "time": "2026-10-25T00:40:31.101801+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 420
+  },
+  {
+    "time": "2026-10-25T00:41:01.102384+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 450
+  },
+  {
+    "time": "2026-10-25T00:41:31.102981+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 480
+  },
+  {
+    "time": "2026-10-25T00:42:01.103569+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 510
+  },
+  {
+    "time": "2026-10-25T00:42:31.104160+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 540
+  },
+  {
+    "time": "2026-10-25T00:43:01.104816+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 570
+  },
+  {
+    "time": "2026-10-25T00:43:31.105394+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 600
+  },
+  {
+    "time": "2026-10-25T00:44:01.105989+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 630
+  },
+  {
+    "time": "2026-10-25T00:44:31.106626+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 660
+  },
+  {
+    "time": "2026-10-25T00:45:01.107197+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 690
+  },
+  {
+    "time": "2026-10-25T00:45:31.107786+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 720
+  },
+  {
+    "time": "2026-10-25T00:46:01.108371+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 750
+  },
+  {
+    "time": "2026-10-25T00:46:31.108904+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 780
+  },
+  {
+    "time": "2026-10-25T00:47:01.109503+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 810
+  },
+  {
+    "time": "2026-10-25T00:47:31.110085+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 840
+  },
+  {
+    "time": "2026-10-25T00:48:01.110690+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 870
+  },
+  {
+    "time": "2026-10-25T00:48:31.111286+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 900
+  },
+  {
+    "time": "2026-10-25T00:49:01.111874+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 930
+  },
+  {
+    "time": "2026-10-25T00:49:31.112425+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 960
+  },
+  {
+    "time": "2026-10-25T00:50:01.113086+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 990
+  },
+  {
+    "time": "2026-10-25T00:50:31.113684+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1020
+  },
+  {
+    "time": "2026-10-25T00:51:01.114271+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1050
+  },
+  {
+    "time": "2026-10-25T00:51:31.114935+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1080
+  },
+  {
+    "time": "2026-10-25T00:52:01.115578+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1110
+  },
+  {
+    "time": "2026-10-25T00:52:31.116163+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1140
+  },
+  {
+    "time": "2026-10-25T00:53:01.116727+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1170
+  },
+  {
+    "time": "2026-10-25T00:53:31.117370+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1200
+  },
+  {
+    "time": "2026-10-25T00:54:01.117964+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1230
+  },
+  {
+    "time": "2026-10-25T00:54:31.118547+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1260
+  },
+  {
+    "time": "2026-10-25T00:55:01.119127+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1290
+  },
+  {
+    "time": "2026-10-25T00:55:31.119868+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1320
+  },
+  {
+    "time": "2026-10-25T00:56:01.120456+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1350
+  },
+  {
+    "time": "2026-10-25T00:56:31.121035+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1380
+  },
+  {
+    "time": "2026-10-25T00:57:01.121584+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1410
+  },
+  {
+    "time": "2026-10-25T00:57:31.122176+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1440
+  },
+  {
+    "time": "2026-10-25T00:58:01.122774+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1470
+  },
+  {
+    "time": "2026-10-25T00:58:31.123361+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1500
+  },
+  {
+    "time": "2026-10-25T00:59:01.124021+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1530
+  },
+  {
+    "time": "2026-10-25T00:59:31.124619+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1560
+  },
+  {
+    "time": "2026-10-25T01:00:01.125208+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1590
+  },
+  {
+    "time": "2026-10-25T01:00:31.125840+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1620
+  },
+  {
+    "time": "2026-10-25T01:01:01.126458+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1650
+  },
+  {
+    "time": "2026-10-25T01:01:31.127054+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1680
+  },
+  {
+    "time": "2026-10-25T01:02:01.127647+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1710
+  },
+  {
+    "time": "2026-10-25T01:02:31.128247+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1740
+  },
+  {
+    "time": "2026-10-25T01:03:01.128809+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1770
+  },
+  {
+    "time": "2026-10-25T01:03:31.129415+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1800
+  },
+  {
+    "time": "2026-10-25T01:04:01.129998+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1830
+  },
+  {
+    "time": "2026-10-25T01:04:31.130593+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1860
+  },
+  {
+    "time": "2026-10-25T01:05:01.131170+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1890
+  },
+  {
+    "time": "2026-10-25T01:05:31.131757+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1920
+  },
+  {
+    "time": "2026-10-25T01:06:01.132387+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1950
+  },
+  {
+    "time": "2026-10-25T01:06:31.132984+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 1980
+  },
+  {
+    "time": "2026-10-25T01:07:01.133573+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2010
+  },
+  {
+    "time": "2026-10-25T01:07:31.134170+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2040
+  },
+  {
+    "time": "2026-10-25T01:08:01.134757+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2070
+  },
+  {
+    "time": "2026-10-25T01:08:31.135347+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2100
+  },
+  {
+    "time": "2026-10-25T01:09:01.135949+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2130
+  },
+  {
+    "time": "2026-10-25T01:09:31.136585+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2160
+  },
+  {
+    "time": "2026-10-25T01:10:01.137123+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2190
+  },
+  {
+    "time": "2026-10-25T01:10:31.137697+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2220
+  },
+  {
+    "time": "2026-10-25T01:11:01.138328+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2250
+  },
+  {
+    "time": "2026-10-25T01:11:31.139036+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2280
+  },
+  {
+    "time": "2026-10-25T01:12:01.139625+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2310
+  },
+  {
+    "time": "2026-10-25T01:12:31.140212+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2340
+  },
+  {
+    "time": "2026-10-25T01:13:01.140837+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2370
+  },
+  {
+    "time": "2026-10-25T01:13:31.141422+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2400
+  },
+  {
+    "time": "2026-10-25T01:14:01.142018+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2430
+  },
+  {
+    "time": "2026-10-25T01:14:31.142608+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2460
+  },
+  {
+    "time": "2026-10-25T01:15:01.143180+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2490
+  },
+  {
+    "time": "2026-10-25T01:15:31.143808+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2520
+  },
+  {
+    "time": "2026-10-25T01:16:01.144397+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2550
+  },
+  {
+    "time": "2026-10-25T01:16:31.144972+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2580
+  },
+  {
+    "time": "2026-10-25T01:17:01.145567+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2610
+  },
+  {
+    "time": "2026-10-25T01:17:31.146155+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2640
+  },
+  {
+    "time": "2026-10-25T01:18:01.146759+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2670
+  },
+  {
+    "time": "2026-10-25T01:18:31.147344+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2700
+  },
+  {
+    "time": "2026-10-25T01:19:01.147969+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2730
+  },
+  {
+    "time": "2026-10-25T01:19:31.148607+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2760
+  },
+  {
+    "time": "2026-10-25T01:20:01.149374+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2790
+  },
+  {
+    "time": "2026-10-25T01:20:31.150031+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2820
+  },
+  {
+    "time": "2026-10-25T01:21:01.150692+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2850
+  },
+  {
+    "time": "2026-10-25T01:21:31.151284+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2880
+  },
+  {
+    "time": "2026-10-25T01:22:01.152047+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2910
+  },
+  {
+    "time": "2026-10-25T01:22:31.152708+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2940
+  },
+  {
+    "time": "2026-10-25T01:23:01.153293+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 2970
+  },
+  {
+    "time": "2026-10-25T01:23:31.153871+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3000
+  },
+  {
+    "time": "2026-10-25T01:24:01.154468+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3030
+  },
+  {
+    "time": "2026-10-25T01:24:31.155078+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3060
+  },
+  {
+    "time": "2026-10-25T01:25:01.155704+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3090
+  },
+  {
+    "time": "2026-10-25T01:25:31.156277+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3120
+  },
+  {
+    "time": "2026-10-25T01:26:01.156867+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3150
+  },
+  {
+    "time": "2026-10-25T01:26:31.157563+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3180
+  },
+  {
+    "time": "2026-10-25T01:27:01.158150+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3210
+  },
+  {
+    "time": "2026-10-25T01:27:31.158686+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3240
+  },
+  {
+    "time": "2026-10-25T01:28:01.159178+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3270
+  },
+  {
+    "time": "2026-10-25T01:28:31.159759+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3300
+  },
+  {
+    "time": "2026-10-25T01:29:01.160346+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3330
+  },
+  {
+    "time": "2026-10-25T01:29:31.160959+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3360
+  },
+  {
+    "time": "2026-10-25T01:30:01.161623+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3390
+  },
+  {
+    "time": "2026-10-25T01:30:31.162281+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3420
+  },
+  {
+    "time": "2026-10-25T01:31:01.162810+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3450
+  },
+  {
+    "time": "2026-10-25T01:31:31.163406+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3480
+  },
+  {
+    "time": "2026-10-25T01:32:01.164104+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3510
+  },
+  {
+    "time": "2026-10-25T01:32:31.164715+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3540
+  },
+  {
+    "time": "2026-10-25T01:33:01.165304+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3570
+  },
+  {
+    "time": "2026-10-25T01:33:31.165965+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3600
+  },
+  {
+    "time": "2026-10-25T01:34:01.166610+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3630
+  },
+  {
+    "time": "2026-10-25T01:34:31.167197+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3660
+  },
+  {
+    "time": "2026-10-25T01:35:01.167783+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3690
+  },
+  {
+    "time": "2026-10-25T01:35:31.168439+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3720
+  },
+  {
+    "time": "2026-10-25T01:36:01.169097+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3750
+  },
+  {
+    "time": "2026-10-25T01:36:31.169685+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3780
+  },
+  {
+    "time": "2026-10-25T01:37:01.170281+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3810
+  },
+  {
+    "time": "2026-10-25T01:37:31.170939+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3840
+  },
+  {
+    "time": "2026-10-25T01:38:01.171540+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3870
+  },
+  {
+    "time": "2026-10-25T01:38:31.172124+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3900
+  },
+  {
+    "time": "2026-10-25T01:39:01.172778+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3930
+  },
+  {
+    "time": "2026-10-25T01:39:31.173372+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3960
+  },
+  {
+    "time": "2026-10-25T01:40:01.173964+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 3990
+  },
+  {
+    "time": "2026-10-25T01:40:31.174540+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4020
+  },
+  {
+    "time": "2026-10-25T01:41:01.175214+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4050
+  },
+  {
+    "time": "2026-10-25T01:41:31.175791+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4080
+  },
+  {
+    "time": "2026-10-25T01:42:01.176378+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4110
+  },
+  {
+    "time": "2026-10-25T01:42:31.177114+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4140
+  },
+  {
+    "time": "2026-10-25T01:43:01.177701+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4170
+  },
+  {
+    "time": "2026-10-25T01:43:31.178291+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4200
+  },
+  {
+    "time": "2026-10-25T01:44:01.178892+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4230
+  },
+  {
+    "time": "2026-10-25T01:44:31.179538+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4260
+  },
+  {
+    "time": "2026-10-25T01:45:01.180126+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4290
+  },
+  {
+    "time": "2026-10-25T01:45:31.180712+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4320
+  },
+  {
+    "time": "2026-10-25T01:46:01.181243+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4350
+  },
+  {
+    "time": "2026-10-25T01:46:31.182014+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4380
+  },
+  {
+    "time": "2026-10-25T01:47:01.182750+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4410
+  },
+  {
+    "time": "2026-10-25T01:47:31.183286+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4440
+  },
+  {
+    "time": "2026-10-25T01:48:01.183946+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4470
+  },
+  {
+    "time": "2026-10-25T01:48:31.184581+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4500
+  },
+  {
+    "time": "2026-10-25T01:49:01.185175+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4530
+  },
+  {
+    "time": "2026-10-25T01:49:31.185768+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4560
+  },
+  {
+    "time": "2026-10-25T01:50:01.186352+02:00",
+    "stage": "fio_wait",
+    "mode": "write",
+    "seconds": 4590
+  },
+  {
+    "time": "2026-10-25T01:50:19.095572+02:00",
+    "stage": "fio_end",
+    "mode": "write",
+    "returncode": 0
+  },
+  {
+    "time": "2026-10-25T01:50:19.468372+02:00",
+    "result": "WRITE_COMPLETE_POWER_CYCLE_REQUIRED",
+    "bytes": 512110190592,
+    "kernel_warnings": [
+      "[  157.980973] ata4.00: exception Emask 0x10 SAct 0x78fff800 SErr 0x4c0000 action 0x6 frozen",
+      "[  157.981139] ata4: SError: { CommWake 10B8B Handshk }",
+      "[  157.981166] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981277] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981383] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981488] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981592] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981697] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981802] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.981906] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.982011] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.982115] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.982220] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.985189] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.992140] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  157.999143] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.006130] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.013106] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.020084] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.027173] ata4: hard resetting link",
+      "[  158.664989] ata4.00: exception Emask 0x11 SAct 0x70f801ff SErr 0x400000 action 0x6 frozen",
+      "[  158.668715] ata4: SError: { Handshk }",
+      "[  158.670462] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.679282] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.688091] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.696799] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.705427] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.714038] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.718501] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.722329] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.725848] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.729181] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.732462] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.735743] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.739021] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.742298] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.745653] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.748938] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.752214] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  158.755536] ata4: hard resetting link",
+      "[  159.273024] ata4.00: exception Emask 0x11 SAct 0x80ffc007 SErr 0x400000 action 0x6 frozen",
+      "[  159.276402] ata4: SError: { Handshk }",
+      "[  159.278122] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.286331] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.293117] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.296573] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.299922] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.303215] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.306503] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.309792] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.313079] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.316352] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.319606] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.322852] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.326094] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.329345] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.332619] ata4: hard resetting link",
+      "[  159.857033] ata4: limiting SATA link speed to 1.5 Gbps",
+      "[  159.857054] ata4.00: exception Emask 0x11 SAct 0x3fc0 SErr 0x400000 action 0x6 frozen",
+      "[  159.860375] ata4: SError: { Handshk }",
+      "[  159.862055] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.870243] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.878457] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.885201] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.889074] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.892385] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.895700] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.899009] ata4.00: failed command: WRITE FPDMA QUEUED",
+      "[  159.902335] ata4: hard resetting link"
+    ],
+    "next": "sudo poweroff; physically disconnect SSD power30s; reboot Linux; run verify from this same folder"
+  }
+]

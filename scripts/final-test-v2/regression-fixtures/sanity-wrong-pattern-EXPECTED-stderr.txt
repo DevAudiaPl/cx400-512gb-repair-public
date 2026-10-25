@@ -1,0 +1,92 @@
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 0, length 1048576 (requested block: offset=0, length=1048576, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 1048576, length 1048576 (requested block: offset=1048576, length=1048576, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 2097152, length 1048576 (requested block: offset=2097152, length=1048576, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 3145728, length 1048576 (requested block: offset=3145728, length=1048576, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 4194304, length 1048576 (requested block: offset=4194304, length=1048576, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 5242880, length 1048576 (requested block: offset=5242880, length=1048576, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 6291456, length 1048576 (requested block: offset=6291456, length=1048576, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7340032, length 4096 (requested block: offset=7340032, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7344128, length 4096 (requested block: offset=7344128, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7348224, length 4096 (requested block: offset=7348224, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7352320, length 4096 (requested block: offset=7352320, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7356416, length 4096 (requested block: offset=7356416, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7360512, length 4096 (requested block: offset=7360512, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7364608, length 4096 (requested block: offset=7364608, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7368704, length 4096 (requested block: offset=7368704, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7372800, length 4096 (requested block: offset=7372800, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7376896, length 4096 (requested block: offset=7376896, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7380992, length 4096 (requested block: offset=7380992, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7385088, length 4096 (requested block: offset=7385088, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7389184, length 4096 (requested block: offset=7389184, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7393280, length 4096 (requested block: offset=7393280, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7397376, length 4096 (requested block: offset=7397376, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)
+fio: got pattern '7e', wanted 'f2'. Bad bits 3
+fio: bad pattern block offset 0
+pattern: verify failed at file /home/operator/cx400-final-test-v1/cx400-final-write-result-20261024-233639/fio-sanity-regular-file.bin offset 7401472, length 4096 (requested block: offset=7401472, length=4096, flags=8)
+fio: verify type mismatch (43286 media, 18 given)

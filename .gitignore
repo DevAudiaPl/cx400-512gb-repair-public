@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/work/
+/archive/
+/packages/
+*.bin
+*.exe
+*.dll
+*.zip
+*.rar
+*.7z
+/manifests/validation-local.json
+.env
+.env.*
+!.env.example

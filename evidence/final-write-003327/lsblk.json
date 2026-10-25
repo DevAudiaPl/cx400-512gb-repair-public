@@ -1,0 +1,70 @@
+{
+  "blockdevices": [
+    {
+      "name": "/dev/sda",
+      "size": 120034123776,
+      "model": "Intenso SSD",
+      "serial": "SYNTHETIC_HEALTHY_DISK",
+      "tran": "sata",
+      "type": "disk",
+      "mountpoints": [],
+      "ro": false,
+      "children": [
+        {
+          "name": "/dev/sda1",
+          "size": 113899470848,
+          "model": null,
+          "serial": null,
+          "tran": null,
+          "type": "part",
+          "mountpoints": [
+            "/"
+          ],
+          "ro": false
+        },
+        {
+          "name": "/dev/sda2",
+          "size": 1024,
+          "model": null,
+          "serial": null,
+          "tran": null,
+          "type": "part",
+          "mountpoints": [],
+          "ro": false
+        },
+        {
+          "name": "/dev/sda5",
+          "size": 6132072448,
+          "model": null,
+          "serial": null,
+          "tran": null,
+          "type": "part",
+          "mountpoints": [
+            "[SWAP]"
+          ],
+          "ro": false
+        }
+      ]
+    },
+    {
+      "name": "/dev/sdb",
+      "size": 512110190592,
+      "model": "SATA SSD",
+      "serial": "CX4R2610242000213B51",
+      "tran": "sata",
+      "type": "disk",
+      "mountpoints": [],
+      "ro": false
+    },
+    {
+      "name": "/dev/sdc",
+      "size": 0,
+      "model": "Multi-Card",
+      "serial": "SYNTHETIC_CARD_READER",
+      "tran": "usb",
+      "type": "disk",
+      "mountpoints": [],
+      "ro": false
+    }
+  ]
+}

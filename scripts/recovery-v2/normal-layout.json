@@ -1,0 +1,50 @@
+[
+  {
+    "file": "normal-section0.bin",
+    "burner_address": 1611071488,
+    "normal_address": 1544421376,
+    "size": 131072,
+    "sha256": "5137ebb2c60b6cb7f4d37a0217de547a71b3916340adb5680d55b5332afb5494",
+    "xor0561_sha256": "4a75cde762777c555ed3382b3ba2d20bf39350af4bc5db9293bb8bb0328a1e9c"
+  },
+  {
+    "file": "normal-section1.bin",
+    "burner_address": 1611202560,
+    "normal_address": 1544323072,
+    "size": 32768,
+    "sha256": "58b5e0e26f6248cf54a4931b001daf2d9fdd4f700ee0d83b7639bbef0a2d575b",
+    "xor0561_sha256": "918ee26bf3ccd9312ab92a966b80442622fb7c9704221bbf39b713a7a88435d0"
+  },
+  {
+    "file": "normal-section2.bin",
+    "burner_address": 1611235328,
+    "normal_address": 1610613760,
+    "size": 524288,
+    "sha256": "04cec39118bbd4c58544359b60f7b5a8b2d8155ab5601cf5f4acdf822e5141a3",
+    "xor0561_sha256": "ad5f52472325d0f77acd96b39f4bbbb61d8847ffc173c657c06d22c0a84900b7"
+  },
+  {
+    "file": "normal-section3.bin",
+    "burner_address": 1611759616,
+    "normal_address": 738328576,
+    "size": 32768,
+    "sha256": "913d5d4065eca28279d2955ebe277212f033420a483d36a47b892595b1c1bec0",
+    "xor0561_sha256": "fe442c2cdbbb0f39c3cc5e980d2fb7189e40798500b1d838df2b167e91f107df"
+  },
+  {
+    "file": "normal-section4.bin",
+    "burner_address": 1611792384,
+    "normal_address": 1544421376,
+    "size": 32768,
+    "sha256": "a6baefd5d6d0cd5a65aef7f13bce2149cbb6806b8b054a2b743ef06db54785bc",
+    "xor0561_sha256": "5a0e3e91ee7a76bf862499175651690672a73ec2cc9c99ac5d08a2703fabc38a"
+  },
+  {
+    "file": "normal-section5.bin",
+    "burner_address": 1611825152,
+    "normal_address": 1544323072,
+    "size": 16384,
+    "sha256": "af805f2aa1e7b297e0ef38d836ad9d81724e9031101c3563f2254b2e7c5574d1",
+    "xor0561_sha256": "a168e4bad026a811a4197eddbafd2f8371fb28a0340d4233cbc7aac6f68e4c9b"
+  }
+]
